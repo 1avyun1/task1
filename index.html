@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="head">
+        <div class="logo">
+            <div class="call">Call - 123 456 789</div>
+            <div class="logo1"> <img src="img/header/logoHeader.svg" alt="logo1"> </div>
+            <a href="#" class="button" id="reservationBtn">Reservation</a>
+        </div>
+
+        <div class="nav">
+            <div class="ssilki">
+                <ol>
+                    <li>Home</li>
+                    <li>About as</li>
+                    <li>Our menu</li>
+                    <li>Pages</li>
+                    <li>Blog</li>
+                    <li>Contact Us</li>
+                </ol>
+            </div>
+            <div class="icon">
+                <ol>
+                    <li><img src="img/header/insta.svg" alt="insta"></li>
+                    <li><img src="img/header/facebook.svg" alt="facebook"> </li>
+                    <li><img src="img/header/twitter.svg" alt="twitter"> </li>
+                    <li> <img src="img/header/pinterest.svg" alt="pinterest"></li>
+                </ol>
+            </div>
+            
+            <div class="menu-buttons">
+                <button class="menu-button show-btn" id="showMenu">Show Menu</button>
+                <button class="menu-button hide-btn" id="hideMenu" style="display: none;">Hide Menu</button>
+            </div>
+        </div>
+        
+        <div class="animated-menu" id="animatedMenu" style="display: none;">
+            <ul class="vertical-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About as</a></li>
+                <li><a href="#">Our menu</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="reservationModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <h2>Login</h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <div class="first">
+            <div class="image">
+                <div class="title">
+                    Welcome to restaurant
+                </div>
+                <div class="subtitle">
+                    The people, food and the prime locations make the prfect place good friends & family to come
+                    together and have great time
+                </div>
+                <div class="ViewMenu">
+                    <a href="#">View Menu</a>
+                </div>
+            </div>
+            <div class="image1">
+                <img src="img/main/mainScreen1/imageHeader1.svg" alt="imageHeader1">
+            </div>
+        </div>
+        <div class="second">
+            <div class="locate">
+                <img src="img/main/mainScreen2/locateScr2.svg" alt="locate">
+                <div class="text">
+                    <div class="titlesec">
+                        Locate Us
+                    </div>
+                    <div class="subtitle">
+                        Riverside 25, San Diego, California
+                    </div>
+                </div>
+            </div>
+            <div class="locate">
+                <img src="img/main/mainScreen2/openhourScr2.svg" alt="">
+                <div class="text">
+                    <div class="titlesec">
+                        Open Hours
+                    </div>
+                    <div class="subtitle">
+                        Mon To Fri 9:00 AM - 9:00 PM
+                    </div>
+                </div>
+            </div>
+            <div class="locate">
+                <img src="img/main/mainScreen2/reservationScr2.svg" alt="">
+                <div class="text">
+                    <div class="titlesec">
+                        Reservation
+                    </div>
+                    <div class="subtitle">
+                        restaurantate@gmail.com
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="third">
+            <div class="secondhend">
+                <div class="background">
+                    <img src="img/main/mainScreen3/backgroundScr3.svg" alt="">
+                </div>
+                <div class="delicionStory">
+                    <div class="story">
+                        <div class="title1">
+                            The Delicious Story
+                        </div>
+                        <div class="subtitle">
+                            The people, food and the prime locations make the prfect place good friends & family to come
+                            together and have great time
+                        </div>
+                    </div>
+                    <div class="years">
+                        <div class="year">
+                            <div class="title1">
+                                2018
+                            </div>
+                            <div class="subtitle">
+                                Plan for this restaurant to deliver healthy food.
+                            </div>
+                        </div>
+                        <div class="year">
+                            <div class="title1">
+                                2022
+                            </div>
+                            <div class="subtitle">
+                                Happily in the fourth year by fulfill the motto.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Josefine">
+                        Josefine
+                    </div>
+                    <div class="imgJose">
+                        <img src="img/main/mainScreen3/rospisScr3.svg" alt="josi">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fourth">
+            <div class="menu1">
+                <div class="Menu">
+                    menu
+                </div>
+                <div class="title1">
+                    Try Our Special Dishes
+                </div>
+                <div class="subtitle">
+                    Every time you perfectly dine with us, it should happy for great inspired food in an environment designed with individual touches unique to the local area.
+                </div>
+                <img src="img/main/mainScreen4/imgScr4.svg" alt="img">
+                <div class="Seealldishes">
+                    See all dishes
+                </div>
+            </div>
+            <div class="menu2">
+                <div class="title2">
+                    Starters
+                </div>
+                <div class="position">
+                    <img src="img/main/mainScreen4/Starters/Starters1Scr4.svg" alt="1">
+                    <div class="text">
+                        <div class="title1">
+                            Raw Scallops from Erquy
+                        </div>
+                        <div class="subtitle">
+                            Shack the scallop to that uzed for aysters <span><span class="line">______________</span>$40</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="position">
+                    <img src="img/main/mainScreen4/Starters/Starters2Scr4.svg" alt="2">
+                    <div class="text">
+                        <div class="title1">
+                            Spring Roll              
+                        </div>
+                        <div class="subtitle">
+                            Add oil to a hot pan spring onion whites <span><span class="line">_______________</span>$20</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="position">
+                    <img src="img/main/mainScreen4/Starters/start3.svg" alt="3">
+                    <div class="text">
+                        <div class="title1">
+                            French Onion Soup
+                        </div>
+                        <div class="subtitle">
+                            Wheat flour, apple cider vinegar, bread <span><span class="line">_______________</span>$25</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="position">
+                    <img src="img/main/mainScreen4/Starters/start4.svg" alt="4">
+                    <div class="text">
+                        <div class="title1">
+                            Tomato Bruschetta
+                        </div>
+                        <div class="subtitle">
+                            Bread, olive oil, garlic, black pepper <span><span class="line">_________________</span>$30</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="title2">
+                    Main Dish
+                </div>
+                <div class="position">
+                    <img src="img/main/mainScreen4/MianDish/1.svg" alt="1">
+                    <div class="text">
+                        <div class="title1">
+                            Grilled Salmon with Dill Sauce
+                        </div>
+                        <div class="subtitle">
+                           Brown sugar, salmon fillet, Dijon mustard <span><span class="line">______________</span>$40</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="position">
+                    <img src="img/main/mainScreen4/MianDish/2.svg" alt="2">
+                    <div class="text">
+                        <div class="title1">
+                            Roast Beef with Vegetable
+                        </div>
+                        <div class="subtitle">
+                            Green beans, rib eye, olive oil, beef <span><span class="line">_________________</span>$20</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="position">
+                    <img src="img/main/mainScreen4/MianDish/3.svg" alt="3">
+                    <div class="text">
+                        <div class="title1">
+                            Marrkesh Vegetetarian Curruy
+                        </div>
+                        <div class="subtitle">
+                            Sweet potato, eggplant, garbanzo bean <span><span class="line">_______________</span>$25</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="position">
+                    <img src="img/main/mainScreen4/MianDish/4.svg" alt="4">
+                    <div class="text">
+                        <div class="title1">
+                            Spicy Vegan Potato Curry
+                        </div>
+                        <div class="subtitle">
+                            Coconut milk, beans, potatoes, curry powder <span><span class="line">_____________</span>$35</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="title2">
+                    Dessert
+                </div>
+                <div class="position">
+                    <img src="img/main/mainScreen4/Desert/1.svg" alt="1">
+                    <div class="text">
+                        <div class="title1">
+                            Apple Pie with Cream
+                        </div>
+                        <div class="subtitle">
+                            Whipping cream, egg white, cinnamon <span><span class="line">________________</span>$15</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="position">
+                    <img src="img/main/mainScreen4/Desert/2.svg" alt="2">
+                    <div class="text">
+                        <div class="title1">
+                            Lemon Meringue Pie
+                        </div>
+                        <div class="subtitle">
+                            Frozen pie crust, meringue, lemon <span><span class="line">__________________</span>$30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="text2">
+            <div class="Testimonial">
+                Testimonial
+            </div>
+            <div class="title1">
+                Our Clients Say
+            </div>
+            <div class="subtitle">
+                We love to hear from customers, so please leave a comment or say hello in an email.
+            </div>
+        </div>
+        
+        <div class="clients-mobile">
+            <div class="one">
+                <div class="photo">
+                    <div class="img1">
+                        <img src="img/main/mainScreen5/Natasha.svg" alt="Natasha">
+                    </div>
+                    <div class="text">
+                        <div class="title1">
+                            Natasha D
+                        </div>
+                        <div class="subtitle">
+                            NewYork
+                        </div>
+                    </div>
+                </div>
+                <div class="text3">
+                    They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy.
+                </div>
+            </div>
+            <div class="one">
+                <div class="photo">
+                    <div class="img2">
+                        <img src="img/main/mainScreen5/Jack.svg" alt="Jack">
+                    </div>
+                    <div class="text">
+                        <div class="title1">
+                            Jack Sparrow
+                        </div>
+                        <div class="subtitle">
+                            Salt Lake City
+                        </div>
+                    </div>
+                </div>
+                <div class="text3">
+                    I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own.
+                </div>
+            </div>
+            <div class="one">
+                <div class="photo">
+                    <div class="img3">
+                        <img src="img/main/mainScreen5/Martin.svg" alt="Martin">
+                    </div>
+                    <div class="text">
+                        <div class="title1">
+                            Martin
+                        </div>
+                        <div class="subtitle">
+                            San Diego
+                        </div>
+                    </div>
+                </div>
+                <div class="text3">
+                    Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy.
+                </div>
+            </div>
+        </div>
+        
+        <div class="testimonials-container">
+            <div class="testimonials-slider">
+                <div class="slider-container" id="sliderContainer">
+                    <div class="clients">
+                        <div class="one">
+                            <div class="photo">
+                                <div class="img1">
+                                    <img src="img/main/mainScreen5/Natasha.svg" alt="Natasha">
+                                </div>
+                                <div class="text">
+                                    <div class="title1">
+                                        Natasha D
+                                    </div>
+                                    <div class="subtitle">
+                                        NewYork
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text3">
+                                They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy.
+                            </div>
+                        </div>
+                        <div class="one">
+                            <div class="photo">
+                                <div class="img2">
+                                    <img src="img/main/mainScreen5/Jack.svg" alt="Jack">
+                                </div>
+                                <div class="text">
+                                    <div class="title1">
+                                        Jack Sparrow
+                                    </div>
+                                    <div class="subtitle">
+                                        Salt Lake City
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text3">
+                                I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own.
+                            </div>
+                        </div>
+                        <div class="one">
+                            <div class="photo">
+                                <div class="img3">
+                                    <img src="img/main/mainScreen5/Martin.svg" alt="Martin">
+                                </div>
+                                <div class="text">
+                                    <div class="title1">
+                                        Martin
+                                    </div>
+                                    <div class="subtitle">
+                                        San Diego
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text3">
+                                Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="clients">
+                        <div class="one">
+                            <div class="photo">
+                                <div class="img1">
+                                    <img src="img/main/mainScreen5/Natasha.svg" alt="Sarah">
+                                </div>
+                                <div class="text">
+                                    <div class="title1">
+                                        Sarah Johnson
+                                    </div>
+                                    <div class="subtitle">
+                                        Los Angeles
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text3">
+                                Amazing atmosphere and even better food! The service was exceptional and every dish was perfectly prepared. Highly recommended!
+                            </div>
+                        </div>
+                        <div class="one">
+                            <div class="photo">
+                                <div class="img2">
+                                    <img src="img/main/mainScreen5/Jack.svg" alt="Michael">
+                                </div>
+                                <div class="text">
+                                    <div class="title1">
+                                        Michael Brown
+                                    </div>
+                                    <div class="subtitle">
+                                        Chicago
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text3">
+                                The flavors in every dish are incredible. I've been coming here for years and the quality never disappoints. A true culinary experience!
+                            </div>
+                        </div>
+                        <div class="one">
+                            <div class="photo">
+                                <div class="img3">
+                                    <img src="img/main/mainScreen5/Martin.svg" alt="Emily">
+                                </div>
+                                <div class="text">
+                                    <div class="title1">
+                                        Emily Wilson
+                                    </div>
+                                    <div class="subtitle">
+                                        Miami
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text3">
+                                The attention to detail in both presentation and taste is remarkable. Every visit feels special and the staff makes you feel like family.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="clients">
+                        <div class="one">
+                            <div class="photo">
+                                <div class="img1">
+                                    <img src="img/main/mainScreen5/Natasha.svg" alt="David">
+                                </div>
+                                <div class="text">
+                                    <div class="title1">
+                                        David Thompson
+                                    </div>
+                                    <div class="subtitle">
+                                        Seattle
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text3">
+                                The combination of fresh ingredients and creative recipes makes this place stand out. I can't wait to come back and try more dishes!
+                            </div>
+                        </div>
+                        <div class="one">
+                            <div class="photo">
+                                <div class="img2">
+                                    <img src="img/main/mainScreen5/Jack.svg" alt="Lisa">
+                                </div>
+                                <div class="text">
+                                    <div class="title1">
+                                        Lisa Martinez
+                                    </div>
+                                    <div class="subtitle">
+                                        Denver
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text3">
+                                From the moment you walk in, you're treated like royalty. The food is consistently excellent and the wine selection perfectly complements the menu.
+                            </div>
+                        </div>
+                        <div class="one">
+                            <div class="photo">
+                                <div class="img3">
+                                    <img src="img/main/mainScreen5/Martin.svg" alt="Robert">
+                                </div>
+                                <div class="text">
+                                    <div class="title1">
+                                        Robert Chen
+                                    </div>
+                                    <div class="subtitle">
+                                        Boston
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text3">
+                                Outstanding culinary experience! The chef's specials are always inventive and delicious. This has become our favorite date night spot.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <div class="slider-indicators">
+                    <div class="indicator active" data-slide="0"></div>
+                    <div class="indicator" data-slide="1"></div>
+                    <div class="indicator" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="f first1">
+                <div class="theteasteat">
+                    #TheTastEat
+                </div>
+                <div class="contact1">Contact</div>
+                <div class="contact">
+                    5 Rue Dalou, 75015 Paris <br>  
+                    <span class="contct">
+                        +123 456 789 <br>
+                        josefin@mail.com
+                    </span>
+                </div>
+            </div>
+            <div class="f second1">
+                <img src="img/header/logoHeader.svg" alt="logo">
+                <div class="join">
+                    Join our mailing list for updates <br> Get news & offers events.
+                </div>
+                <div class="forma">
+                    <form action="" class="subscription-form">
+                        <div class="input-group">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="Subscribe">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="f third1">
+                <div class="icon">
+                    <ol>
+                        <li><img src="img/header/insta.svg" alt="insta"></li>
+                        <li><img src="img/header/facebook.svg" alt="facebook"> </li>
+                        <li><img src="img/header/twitter.svg" alt="twitter"> </li>
+                        <li> <img src="img/header/pinterest.svg" alt="pinterest"></li>
+                    </ol>
+                </div>
+                <div class="workinghours">Working Hours</div>
+                <div class="raspisanie">
+                    <span>Mon – Fri</span>:7.00am – 6.00pm <br>
+                   <span>Sat:</span>  7.00am – 6.00pm <br>
+                    <span>Sun:</span> 8.00am – 6.00pm
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer2">
+            <div class="one1">
+                <div class="coopir">
+                    © Copyright - TastEat | Designed by <span>VictorFlow</span>- Powered by <span>Webflow</span>
+                </div>
+            </div>
+            <div class="two1">
+                <ul>
+                    <li><a href="#">Styleguide</a></li>
+                    <li><a href="#">Licenses</a></li>
+                    <li><a href="#">Protected</a></li>
+                    <li><a href="#">Not Found</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const showMenuBtn = document.getElementById('showMenu');
+            const hideMenuBtn = document.getElementById('hideMenu');
+            const animatedMenu = document.getElementById('animatedMenu');
+            const reservationBtn = document.getElementById('reservationBtn');
+            const reservationModal = document.getElementById('reservationModal');
+            const closeModal = document.getElementById('closeModal');
+            
+            if (showMenuBtn && hideMenuBtn && animatedMenu) {
+                showMenuBtn.addEventListener('click', function() {
+                    this.style.display = 'none';
+                    hideMenuBtn.style.display = 'block';
+                    animatedMenu.style.display = 'block';
+                });
+
+                hideMenuBtn.addEventListener('click', function() {
+                    this.style.display = 'none';
+                    showMenuBtn.style.display = 'block';
+                    animatedMenu.style.display = 'none';
+                });
+            }
+
+            if (reservationBtn && reservationModal && closeModal) {
+                reservationBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    reservationModal.style.display = 'flex';
+                });
+
+                closeModal.addEventListener('click', function() {
+                    reservationModal.style.display = 'none';
+                });
+
+                window.addEventListener('click', function(e) {
+                    if (e.target === reservationModal) {
+                        reservationModal.style.display = 'none';
+                    }
+                });
+            }
+
+            if (window.innerWidth > 768) {
+                let currentSlide = 0;
+                const totalSlides = 3;
+                const sliderContainer = document.getElementById('sliderContainer');
+                const indicators = document.querySelectorAll('.indicator');
+                let slideInterval;
+                
+                function goToSlide(slideIndex) {
+                    currentSlide = slideIndex;
+                    const translateX = -(currentSlide * (100 / totalSlides)) + '%';
+                    sliderContainer.style.transform = 'translateX(' + translateX + ')';
+                    
+                    indicators.forEach((indicator, index) => {
+                        if (index === currentSlide) {
+                            indicator.classList.add('active');
+                        } else {
+                            indicator.classList.remove('active');
+                        }
+                    });
+                }
+                
+                indicators.forEach((indicator, index) => {
+                    indicator.addEventListener('click', function() {
+                        goToSlide(index);
+                        resetInterval();
+                    });
+                });
+                
+                function nextSlide() {
+                    let nextSlide = currentSlide + 1;
+                    if (nextSlide >= totalSlides) {
+                        nextSlide = 0;
+                    }
+                    goToSlide(nextSlide);
+                }
+                
+                function startInterval() {
+                    slideInterval = setInterval(nextSlide, 5000);
+                }
+                
+                function resetInterval() {
+                    clearInterval(slideInterval);
+                    startInterval();
+                }
+                
+                const testimonialsSlider = document.querySelector('.testimonials-slider');
+                if (testimonialsSlider) {
+                    testimonialsSlider.addEventListener('mouseenter', function() {
+                        clearInterval(slideInterval);
+                    });
+                    
+                    testimonialsSlider.addEventListener('mouseleave', function() {
+                        startInterval();
+                    });
+                }
+                
+                startInterval();
+            }
+        });
+    </script>
+</body>
+</html>
